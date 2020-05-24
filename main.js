@@ -67,14 +67,14 @@
 // console.log(soma(1));
 // console.log(soma());
 
-const usuario = {
-  nome: 'Diego',
-  idade: 23,
-  endereco: {
-    cidade: 'Rio do Sul',
-    estado: 'SC',
-  },
-};
+// const usuario = {
+//   nome: 'Diego',
+//   idade: 23,
+//   endereco: {
+//     cidade: 'Rio do Sul',
+//     estado: 'SC',
+//   },
+// };
 
 // const { nome, idade, endereco: { cidade } } = usuario;
 
@@ -92,32 +92,37 @@ const usuario = {
 
 //REST
 
-const { nome, ...resto } = usuario;
+// const { nome, ...resto } = usuario;
 
-const arr = [1, 2, 3, 4];
-const [a, b, ...c] = arr;
+// const arr = [1, 2, 3, 4];
+// const [a, b, ...c] = arr;
 
-console.log(nome);
-console.log(resto);
-console.log(a);
-console.log(b);
-console.log(c);
+// console.log(nome);
+// console.log(resto);
+// console.log(a);
+// console.log(b);
+// console.log(c);
 
-function soma(...params) {
-  return params.reduce((total, next) => total + next);
-};
+// function soma(...params) {
+//   return params.reduce((total, next) => total + next);
+// };
 
-console.log(soma(1, 3, 4));
+// console.log(soma(1, 3, 4));
 
 //SPREAD
 
-const arr1 = [1, 2, 3];
-const arr2 = [4, 5, 6];
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
 
-const arr3 = [...arr1, ...arr2];
+// const arr3 = [...arr1, ...arr2];
 
-console.log(arr3);
+// console.log(arr3);
 
-const usuario2 = { ...usuario, nome: 'Gabriel' };
+// const usuario2 = { ...usuario, nome: 'Gabriel' };
 
-console.log(usuario2);
+// console.log(usuario2);
+
+const nome = 'Diego';
+const idade = 23;
+
+console.log(`Meu nome é ${nome} e tenho ${idade} anos.`);
