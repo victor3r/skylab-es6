@@ -37,22 +37,22 @@
 
 // console.log(Matematica.soma(1, 2));
 
-const usuario = { nome: 'Diego' };
+// 
 
-usuario.nome = 'Victor';
+const arr = [1, 3, 4, 5, 8, 9];
 
-console.log(usuario);
+const newArr = arr.map((item, index) => item + index);
 
-function teste(x) {
-  let y = 2;
+console.log(newArr);
 
-  if (x > 5) {
-    let y = 4;
+const sum = arr.reduce((total, next) => total + next);
 
-    console.log(x, y);
-  }
-}
+console.log(sum);
 
-console.log(y);
+const filter = arr.filter(item => item % 2 === 0);
 
-teste(10);
+console.log(filter);
+
+const find = arr.find(item => item === 4);
+
+console.log(find);
