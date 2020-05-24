@@ -57,6 +57,12 @@
 
 // console.log(find);
 
-const teste = () => ({ nome: 'Diego' });
+// const teste = () => ({ nome: 'Diego' });
 
-console.log(teste());
+// console.log(teste());
+
+const soma = (a = 3, b = 6) => a + b;
+
+
+console.log(soma(1));
+console.log(soma());

@@ -39,10 +39,13 @@
 // console.log(filter);
 // const find = arr.find(item => item === 4);
 // console.log(find);
-var teste = function teste() {
-  return {
-    nome: 'Diego'
-  };
+// const teste = () => ({ nome: 'Diego' });
+// console.log(teste());
+var soma = function soma() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
+  return a + b;
 };
 
-console.log(teste());
+console.log(soma(1));
+console.log(soma());
