@@ -30,20 +30,19 @@
 // }
 // console.log(Matematica.soma(1, 2));
 // 
-var arr = [1, 3, 4, 5, 8, 9];
-var newArr = arr.map(function (item, index) {
-  return item + index;
-});
-console.log(newArr);
-var sum = arr.reduce(function (total, next) {
-  return total + next;
-});
-console.log(sum);
-var filter = arr.filter(function (item) {
-  return item % 2 === 0;
-});
-console.log(filter);
-var find = arr.find(function (item) {
-  return item === 4;
-});
-console.log(find);
+// const arr = [1, 3, 4, 5, 8, 9];
+// const newArr = arr.map((item, index) => item + index);
+// console.log(newArr);
+// const sum = arr.reduce((total, next) => total + next);
+// console.log(sum);
+// const filter = arr.filter(item => item % 2 === 0);
+// console.log(filter);
+// const find = arr.find(item => item === 4);
+// console.log(find);
+var teste = function teste() {
+  return {
+    nome: 'Diego'
+  };
+};
+
+console.log(teste());

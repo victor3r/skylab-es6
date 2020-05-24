@@ -39,20 +39,24 @@
 
 // 
 
-const arr = [1, 3, 4, 5, 8, 9];
+// const arr = [1, 3, 4, 5, 8, 9];
 
-const newArr = arr.map((item, index) => item + index);
+// const newArr = arr.map((item, index) => item + index);
 
-console.log(newArr);
+// console.log(newArr);
 
-const sum = arr.reduce((total, next) => total + next);
+// const sum = arr.reduce((total, next) => total + next);
 
-console.log(sum);
+// console.log(sum);
 
-const filter = arr.filter(item => item % 2 === 0);
+// const filter = arr.filter(item => item % 2 === 0);
 
-console.log(filter);
+// console.log(filter);
 
-const find = arr.find(item => item === 4);
+// const find = arr.find(item => item === 4);
 
-console.log(find);
+// console.log(find);
+
+const teste = () => ({ nome: 'Diego' });
+
+console.log(teste());
