@@ -82,6 +82,14 @@
 // console.log(arr3);
 // const usuario2 = { ...usuario, nome: 'Gabriel' };
 // console.log(usuario2);
+// const nome = 'Diego';
+// const idade = 23;
+// console.log(`Meu nome é ${nome} e tenho ${idade} anos.`);
 var nome = 'Diego';
 var idade = 23;
-console.log("Meu nome \xE9 ".concat(nome, " e tenho ").concat(idade, " anos."));
+var usuario = {
+  nome: nome,
+  idade: idade,
+  empresa: 'Rocketseat'
+};
+console.log(usuario);
