@@ -138,8 +138,24 @@
 
 // console.log(usuario);
 
-import * as functions from './functions';
-import somaFunction from './soma';
+// import * as functions from './functions';
+// import somaFunction from './soma';
 
-console.log(somaFunction(1, 2));
-console.log(functions.sub(1, 2));
+// console.log(somaFunction(1, 2));
+// console.log(functions.sub(1, 2));
+
+const minhaPromise = () => new Promise((resolve, reject) => { setTimeout(() => { resolve('OK') }, 2000) });
+
+// async function executaPromise() {
+//   const response = await minhaPromise();
+
+//   console.log(response);
+// }
+
+const executaPromise = async () => {
+  console.log(await minhaPromise());
+  console.log(await minhaPromise());
+  console.log(await minhaPromise());
+};
+
+executaPromise();
