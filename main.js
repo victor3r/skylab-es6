@@ -127,13 +127,17 @@
 
 // console.log(`Meu nome é ${nome} e tenho ${idade} anos.`);
 
-const nome = 'Diego';
-const idade = 23;
+// const nome = 'Diego';
+// const idade = 23;
 
-const usuario = {
-  nome,
-  idade,
-  empresa: 'Rocketseat',
-};
+// const usuario = {
+//   nome,
+//   idade,
+//   empresa: 'Rocketseat',
+// };
 
-console.log(usuario);
+// console.log(usuario);
+
+import { soma } from './functions';
+
+console.log(soma(1, 2));
