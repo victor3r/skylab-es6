@@ -144,7 +144,7 @@
 // console.log(somaFunction(1, 2));
 // console.log(functions.sub(1, 2));
 
-const minhaPromise = () => new Promise((resolve, reject) => { setTimeout(() => { resolve('OK') }, 2000) });
+// const minhaPromise = () => new Promise((resolve, reject) => { setTimeout(() => { resolve('OK') }, 2000) });
 
 // async function executaPromise() {
 //   const response = await minhaPromise();
@@ -152,10 +152,25 @@ const minhaPromise = () => new Promise((resolve, reject) => { setTimeout(() => {
 //   console.log(response);
 // }
 
-const executaPromise = async () => {
-  console.log(await minhaPromise());
-  console.log(await minhaPromise());
-  console.log(await minhaPromise());
-};
+// const executaPromise = async () => {
+//   console.log(await minhaPromise());
+//   console.log(await minhaPromise());
+//   console.log(await minhaPromise());
+// };
 
-executaPromise();
+// executaPromise();
+
+import axios from 'axios';
+
+class Api {
+  static async getUserInfo(username) {
+    try {
+      const response = await axios.get(`https://api.github.com/users/${username}`);
+      console.log(response);
+    } catch (err) {
+      console.warn('Erro na API');
+    }
+  }
+}
+
+Api.getUserInfo('victor3r');
