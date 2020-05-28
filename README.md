@@ -198,8 +198,8 @@ console.log(arr3);
 // -------
 
 const usuario1 = {
-  nome: "Gil",
-  idade: 16,
+  nome: "Victor",
+  idade: 22,
 };
 
 const usuario2 = {
@@ -217,7 +217,7 @@ console.log(usuario2);
 Sintaxe limpa para fazer concatenação de variáveis com textos
 
 ```js
-const nome = "Gil";
+const nome = "Victor";
 
 console.log("O meu nome é " + nome);
 
